@@ -1,0 +1,147 @@
+@font-face {
+    font-family: SF_Pro_Medium;
+    src: url(Website_Fonts/SF-Pro-Rounded-Medium.otf);
+  }
+  
+@font-face {
+    font-family: SF_Pro_Thin;
+    src: url(Website_Fonts/SF-Pro-Rounded-Thin.otf);
+}
+
+@font-face {
+    font-family: Bradley_hand;
+    src: url(Website_Fonts/Bradley_Hand.ttf);
+}
+
+@font-face {
+    font-family: Pixel_Font;
+    src: url(Website_Fonts/PixelifySans-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: SF_Pro_Light;
+    src: url(Website_Fonts/SF-Pro-Rounded-Light.otf);
+}
+
+
+.content_font {
+    font-family: SF_Pro_Medium;
+    flex-wrap: wrap;
+}
+
+.title_font {
+    font-family:SF_Pro_Medium;
+    src: url(Website_Fonts/SF-Pro-Rounded-Medium.otf);
+    font-size: 200px;
+    background: radial-gradient(circle, dodgerblue, yellow, purple);
+    animation: butlr 10s linear infinite;
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes butlr {
+    0%{
+        background-position: 0% 0%;
+    }
+    
+
+    50%{
+        background-position: 100% 100%;
+    }
+
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+.color{
+    background: black;
+}
+
+.total-container {
+    display: flex;
+    margin:auto;
+    max-width: 1200px;
+    margin-bottom: 100px;
+    padding:20px;
+}
+
+
+.img-fluid {
+    width: 100px;
+    height: 150px;
+    justify-content: center;
+}
+
+.main-nav ul {
+    font-family: SF_Pro_Medium;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: black;
+    width: 100%;
+}
+
+.container_1 {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+.main-nav a {
+    color: #897F7F;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-nav a:hover {
+    color: white;
+    transition: 0.2s ease-in;
+
+} 
+
+section {
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.landing_page {
+    background: black;
+    justify-content: center;
+}
+
+
+.feature_1 {
+    height: 100vh;
+    background: white;
+}
+
+.first_pic {
+    width: 235px;
+    height: 500px;
+}
+
+.feature1-container {
+    display: flex;
+    margin:auto;
+    width: 1200px;
+    margin-bottom: 150px;
+    padding:20px;
+}
+
+
+.feature_2 {
+    background: beige;
+    height: 100vh;
+}
+
+.feature_3 {
+    background: #CBC3E3;
+    height: 100vh;
+}
