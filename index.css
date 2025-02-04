@@ -114,6 +114,7 @@ section {
 .landing_page {
     background: black;
     justify-content: center;
+    height: 100vh;
 }
 
 
