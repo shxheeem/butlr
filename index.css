@@ -153,14 +153,28 @@ section {
     border-radius: .5rem;
 }
 
+.transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+@media (hover:hover){
+    .animated-list:hover {
+        p{opacity:.5}
+    } 
+    .animated-list:hover {
+        p:hover{opacity:1}
+}
+}
+
+.animate-in {
+    animation-delay: calc(var(--index)* .13s);
+}
 
 
 .feature_2 {
-    background: beige;
+    background:black;
     height: 100vh;
 }
 
-.feature_3 {
-    background: #CBC3E3;
-    height: 100vh;
-}
