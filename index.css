@@ -128,13 +128,31 @@ section {
     height: 500px;
 }
 
+
+
 .feature1-container {
     display: flex;
     margin:auto;
-    width: 1200px;
+    width: 900px;
     margin-bottom: 150px;
     padding:20px;
+    font-family:SF_Pro_Light;
+    src: url(Website_Fonts/SF-Pro-Rounded-Light.otf);
+
 }
+
+.bg-button {
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+
+
+.rounded-lg {
+    border-radius: .5rem;
+}
+
 
 
 .feature_2 {
