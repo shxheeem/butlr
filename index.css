@@ -128,14 +128,21 @@ section {
     height: 500px;
 }
 
+.feature-container {
+    display: flex;
+    margin:auto;
+    width: 900px;
+    margin-bottom: 175px;
+    font-family:SF_Pro_Light;
+    src: url(Website_Fonts/SF-Pro-Rounded-Light.otf);
 
+}
 
 .feature1-container {
     display: flex;
     margin:auto;
     width: 900px;
-    margin-bottom: 150px;
-    padding:20px;
+    margin-top: 75px;
     font-family:SF_Pro_Light;
     src: url(Website_Fonts/SF-Pro-Rounded-Light.otf);
 
