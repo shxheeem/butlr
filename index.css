@@ -199,5 +199,17 @@ section {
     font-family:SF_Pro_Light;
     src: url(Website_Fonts/SF-Pro-Rounded-Light.otf);
     font-size: 25px;
-   color: white;
+    color: white;
+}
+
+.team-description {
+    font-family:SF_Pro_Thin;
+    src: url(Website_Fonts/SF-Pro-Rounded-Thin.otf);
+    font-size: 17px;
+    color: white;
+}
+
+.links {
+    color: white;
+    font-size: 30px;
 }
