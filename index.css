@@ -191,7 +191,13 @@ section {
 }
 
 .team-pic {
-    width: 225px;
+    width: 200px;
     height: 200px;
 }
 
+.team-names {
+    font-family:SF_Pro_Light;
+    src: url(Website_Fonts/SF-Pro-Rounded-Light.otf);
+    font-size: 25px;
+   color: white;
+}
