@@ -23,21 +23,21 @@ export async function POST(request: Request) {
     const { name, email, number, subject, message } = formSchema.parse(body);
 
     try {
+      // Always send to the Resend account owner's email for testing
       const { data, error } = await resend.emails.send({
-        from: 'onboarding@resend.dev', // Use this for testing
-        // from: 'Butlr Contact Form <contact@yourdomain.com>', // Use this after domain verification
-        to: ['s1ddh9rth@gmail.com'],
+        from: 'onboarding@resend.dev',
+        to: ['siddharth19n@gmail.com'], // This should be the email you used to sign up for Resend
         subject: `New Contact Form Submission: ${subject}`,
-        replyTo: email,
-        text: `
-Name: ${name}
-Email: ${email}
-${number ? `Phone: ${number}\n` : ''}
-Subject: ${subject}
-
-Message:
-${message}
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          ${number ? `<p><strong>Phone:</strong> ${number}</p>` : ''}
+          <p><strong>Subject:</strong> ${subject}</p>
+          <h3>Message:</h3>
+          <p>${message.replace(/\n/g, '<br/>')}</p>
         `,
+        reply_to: email,
       });
 
       if (error) {
